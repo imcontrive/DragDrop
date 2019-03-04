@@ -1,208 +1,49 @@
-/************ CSS Resets *********/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*******************************
-********** MAIN CSS ***********/
-
-body {
-	font-family: var(--font);
+	background: coral;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
 	line-height: 1.5;
-	color: var(--text-color);
-}
-
-/******* Base CSS *******/
-*, *:before, *:after {
 	box-sizing: border-box;
 }
-a {
-	text-decoration: none;
-	color: #fff;
-}
-button {
-	border: 0;
-	cursor: pointer;
-}
-button:focus {
-	outline: 0;
-}
-input {
-	border: 0;
-	margin: 0;
-}
-input:focus {
-	outline: 0;
-}
-/***** Heading Elements ******/
-h1 {
-	font-size: 3rem;
-	font-weight: 700;
-}
-h2 {
-	font-size: 2.5rem;
-	font-weight: 700;
-}
-h3 {
-	font-size: 2rem;
-	font-weight: 700;
-}
-h4 {
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-h5 {
-	font-size: 1rem;
-	font-weight: 700;
-}
-h6 {
-	font-size: 0.8rem;
-	font-weight: 700;
-}
-.float-left {
-	float: left;
-}
-.float-right {
-	float: right;
-}
-.capitalize {
-	text-transform: capitalize;
-}
-.uppercase {
-	text-transform: uppercase;
-}
-.text-center {
+.heading {
 	text-align: center;
+	color: aliceblue;
+	font-style: italic;
 }
-.text-left {
-	text-align: left;
-}
-.text-right {
-	text-align: right;
-}
-.img-responsive {
-	width: 100%;
+ul {
+	list-style-type: none;
 }
 
-/* Grid */
-.col {
-	padding: 15px;
-}
-.col-1 {
-	width: 8.3333%;
-	float: left;
-}
-.col-2 {
-	width: 16.6667%;
-	float: left;
-}
-.col-3 {
-	width: 25%;
-	float: left;
-}
-.col-4 {
-	width: 33.3333%;
-	float: left;
-}
-.col-5 {
-	width: 41.6667%;
-	float: left;
-}
-.col-6 {
-	width: 50%;
-	float: left;
-}
-.col-7 {
-	width: 58.3333%;
-	float: left;
-}
-.col-8 {
-	width: 66.6667%;
-	float: left;
-}
-.col-9 {
-	width: 75%;
-	float: left;
-}
-.col-10 {
-	width: 83.3333%;
-	float: left;
-}
-.col-11 {
-	width: 91.6667%;
-	float: left;
-}
-.col-12 {
-	width: 100%;
-	float: left;
-}
-/* wrapper */
-.wrapper {
-	max-width: 1150px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 20px;
-	text-align: center;
-}
-.submit-btn {
-	background: var(--color-primary);
-	color: #fff;
-	text-transform: uppercase;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-	padding: 12px 30px;
+.listItems , .addList {
+max-width: 275px;
+width: 100%;
+margin: 0 auto;
+padding: 20px;
+margin-top: 3px;
+border: 1px solid white;
+text-align: center;
+background: lightgreen;
+cursor: pointer;
 }
 
-/******* Clearfix *****/
-.clearfix:before, .clearfix:after {
-	content: '';
-	display: table;
+ input {
+	padding: 0px;
+	height: 35px;
+	width:90%;
+} 
+.btn {
+	background: #ffffff;
+	width: 10%;
+	color:#ff4c4c;
+	font-weight: 700;
+	position: relative;
+	top: -34px;
+	left: 125px;
+	border: 0px;
+	font-size: 29px;
 }
-.clearfix:after {
-	clear: both;
+.btn:hover {
+	transform: scale(2);
 }
-.clearfix {
-	*zoom: 1;
-}
-/* Styles for DragDrop */
